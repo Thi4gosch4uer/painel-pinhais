@@ -400,9 +400,37 @@ h3{font-weight:700}
 .fl-lead h2{font-size:25px;line-height:1.15}.fl-lead p{font-size:15px}.fl-two{grid-template-columns:1fr;gap:16px}.fl-strip{grid-template-columns:1fr;gap:16px}.fl-img{border-radius:6px}
 .card{padding:14px;border-radius:16px}.card-head{flex-direction:column;align-items:flex-start;gap:8px}.card-head .tabs2{width:100%;overflow-x:auto;flex-wrap:nowrap;scrollbar-width:none}.card-head .tabs2::-webkit-scrollbar{display:none}.tabs2 button{white-space:nowrap;flex:none}
 .jn-grid{grid-template-columns:1fr}.jn-art h1{font-size:23px}.jn-txt p,.jn-txt div{font-size:17px;line-height:1.6}.jn-row{align-items:flex-start}.jn-share .jn-act{gap:6px}.ed{padding:12px}.adm-kpis{grid-template-columns:repeat(2,1fr)}}
+.hamb{display:none}.scrim{display:none}
+@media (max-width:700px){
+body{padding-left:0;padding-right:0;padding-bottom:30px}.wrap{gap:0;padding-top:0}
+header.top{position:sticky;top:0;z-index:40;display:flex;align-items:center;gap:6px;border-radius:0;border-width:0 0 1px;margin:0;padding:5px 8px;background:var(--bg);box-shadow:0 2px 10px rgba(0,0,0,.12)}
+header.top .mark,header.top small,header.top .sp{display:none}header.top>div:not(.sp){flex:1;text-align:center}header.top h1{font-size:21px;margin:0;line-height:1.1;letter-spacing:.04em}
+header.top .themebtn{font-size:11px;padding:5px 9px;flex:none}
+.hamb{display:flex;flex-direction:column;justify-content:center;gap:5px;width:42px;height:42px;background:none;border:0;padding:10px;cursor:pointer;flex:none}.hamb span{display:block;height:2.5px;background:var(--fg);border-radius:2px}
+.scrim{display:block;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:65;opacity:0;pointer-events:none;transition:opacity .25s}.scrim.on{opacity:1;pointer-events:auto}
+.side{position:fixed;left:0;top:0;bottom:0;height:100dvh;width:84vw;max-width:330px;flex-direction:column;flex-wrap:nowrap;transform:translateX(-105%);visibility:hidden;transition:transform .25s ease,visibility .25s;z-index:70;overflow-y:auto;margin:0;border:0;border-radius:0;padding:14px 10px 30px;gap:0;background:var(--bg);box-shadow:6px 0 30px rgba(0,0,0,.3)}
+.side.open{transform:none;visibility:visible}
+.side .lg0{display:flex;padding:4px 8px 14px}.side .sp{display:block;flex:1}.side .foot{display:block}
+.side button.it{width:100%;font-size:15px;padding:14px 12px;border-bottom:1px solid var(--line);border-radius:0}.side button.it svg{display:block}.side button.it[aria-pressed="true"]{border-radius:8px}
+.side .subm{width:auto;flex-direction:column;flex-wrap:nowrap;padding:0 0 0 14px}
+.paper{border:0;border-radius:0;box-shadow:none;background:var(--bg);padding:8px 14px 24px;backdrop-filter:none}
+.fl-date{font-size:11.5px}.fl-nav{font-size:12px;border-bottom:1px solid var(--line)}
+.fl-grid{margin-top:12px}.fl-mid,.fl-side{border-left:0;padding-left:0;margin-left:0}
+.fl-lead .fl-img{margin:0 -14px;width:calc(100% + 28px);max-width:none;border-radius:0;aspect-ratio:4/3}
+.fl-lead h2{font-size:29px;line-height:1.1;margin:4px 0 8px}.fl-lead p{font-size:16.5px}
+.fl-two{border-top:0;padding-top:0;margin-top:20px;gap:0}.fl-two article,.fl-strip article{padding:16px 0;border-top:1px solid var(--line)}.fl-two h3,.fl-strip h3{font-size:21px;line-height:1.18}
+.fl-two .fl-img,.fl-strip .fl-img{margin:0 -14px 2px;width:calc(100% + 28px);max-width:none;border-radius:0;aspect-ratio:16/10}
+.fl-list li{padding:13px 0 13px 24px;position:relative}.fl-list li::before{content:'\2192';position:absolute;left:0;top:12px;color:var(--blue);font-weight:800}.fl-list .fl-t{font-size:18.5px;line-height:1.2}
+.fl-by{font-size:12px}.fl-k{font-size:11.5px}.fl-h{font-size:12.5px;margin-top:6px}
+.card{border-radius:0;border-left:0;border-right:0;background:var(--bg);box-shadow:none}
+.jn-art h1{font-family:'Source Serif 4',Georgia,serif;font-weight:800;font-size:28px;line-height:1.12}.jn-lead{font-size:18px}
+.jn-capa{margin:6px -14px 14px;width:calc(100% + 28px);max-width:none;border-radius:0}
+.jn-txt p,.jn-txt div,.jn-txt li{font-family:'Source Serif 4',Georgia,serif;font-size:18.5px;line-height:1.65}
+.jn-card{border-radius:0;border-width:1px 0 0;background:none}.jn-card img,.jn-ph{aspect-ratio:16/10}.jn-b h3{font-family:'Source Serif 4',Georgia,serif;font-size:21px;font-weight:800}
+}
 </style>
 
-  <aside class="side" aria-label="Áreas"><div class="lg0"><svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><polygon points="2,60 20,44 30,60" fill="#FFCC00"/><polygon points="10,60 26,48 40,60" fill="#0B7A3E"/><polygon points="22,60 36,42 50,60" fill="#0033A0"/><polygon points="38,60 48,46 62,60" fill="#00A3DA"/><rect x="16" y="28" width="7" height="16" fill="#0033A0"/><rect x="26" y="19" width="7" height="25" fill="#00A3DA"/><rect x="36" y="22" width="7" height="14" fill="#FFCC00"/><polygon points="38,4 60,4 60,26 53,19 45,30 40,25 47,15 41,10" fill="#0A5BC4"/></svg><div><b>Portal Pinhais</b><small>Notícias, sessões e dados da cidade</small></div></div>
+  <div class="scrim" id="scrim"></div><aside class="side" id="menu" aria-label="Áreas"><div class="lg0"><svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><polygon points="2,60 20,44 30,60" fill="#FFCC00"/><polygon points="10,60 26,48 40,60" fill="#0B7A3E"/><polygon points="22,60 36,42 50,60" fill="#0033A0"/><polygon points="38,60 48,46 62,60" fill="#00A3DA"/><rect x="16" y="28" width="7" height="16" fill="#0033A0"/><rect x="26" y="19" width="7" height="25" fill="#00A3DA"/><rect x="36" y="22" width="7" height="14" fill="#FFCC00"/><polygon points="38,4 60,4 60,26 53,19 45,30 40,25 47,15 41,10" fill="#0A5BC4"/></svg><div><b>Portal Pinhais</b><small>Notícias, sessões e dados da cidade</small></div></div>
   <button type="button" class="it" data-v="home" data-s="" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-5h4v5"/></svg>Início</button>
   <button type="button" class="it" data-v="jornal" data-s="" data-cat="" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h13v14H6a2 2 0 0 1-2-2z"/><path d="M17 9h3v8a2 2 0 0 1-2 2"/><path d="M7.5 9h6M7.5 12.5h6M7.5 16h3"/></svg>Notícias</button>
   <button type="button" class="it" data-v="jornal" data-s="" data-cat="cultura" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16M6 20V9M10 20V9M14 20V9M18 20V9M3 9l9-5 9 5z"/></svg>Cultura</button>
@@ -427,7 +455,7 @@ h3{font-weight:700}
 <path class="m3" d="M-100 900 L-100 760 Q200 690 480 750 T1000 740 T1500 730 T1700 750 L1700 900Z"/>
 <g class="onda"><path class="wv " d="M-400 835 q100 -28 200 0 t200 0 t200 0 t200 0 t200 0 t200 0 t200 0 t200 0 t200 0 t200 0 t200 0 t200 0 t200 0 t200 0 t200 0"/></g><g class="onda2"><path class="wv wv2" d="M-400 860 q100 -22 200 0 t200 0 t200 0 t200 0 t200 0 t200 0 t200 0 t200 0 t200 0 t200 0 t200 0 t200 0 t200 0 t200 0 t200 0"/></g><circle class="pt" cx="200" cy="880" r="3" style="animation-delay:-0s;animation-duration:14s"/><circle class="pt" cx="430" cy="880" r="2.5" style="animation-delay:-5s;animation-duration:17s"/><circle class="pt" cx="700" cy="880" r="3.5" style="animation-delay:-9s;animation-duration:13s"/><circle class="pt" cx="980" cy="880" r="2.5" style="animation-delay:-3s;animation-duration:19s"/><circle class="pt" cx="1250" cy="880" r="3" style="animation-delay:-7s;animation-duration:15s"/><circle class="pt" cx="1450" cy="880" r="2.5" style="animation-delay:-11s;animation-duration:16s"/><g transform="translate(110 900) scale(1.5)"><g class="ar" style="animation-delay:-0s"><use href="#araucaria"/></g></g><g transform="translate(260 900) scale(0.9)"><g class="ar" style="animation-delay:-2s"><use href="#araucaria"/></g></g><g transform="translate(520 900) scale(1.1)"><g class="ar" style="animation-delay:-4s"><use href="#araucaria"/></g></g><g transform="translate(900 900) scale(0.8)"><g class="ar" style="animation-delay:-1s"><use href="#araucaria"/></g></g><g transform="translate(1180 900) scale(1.3)"><g class="ar" style="animation-delay:-3s"><use href="#araucaria"/></g></g><g transform="translate(1360 900) scale(0.95)"><g class="ar" style="animation-delay:-5s"><use href="#araucaria"/></g></g><g transform="translate(1510 900) scale(1.6)"><g class="ar" style="animation-delay:-2s"><use href="#araucaria"/></g></g></svg></div>
 <div class="wrap">
-  <header class="top" id="top"><svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><polygon points="2,60 20,44 30,60" fill="#FFCC00"/><polygon points="10,60 26,48 40,60" fill="#0B7A3E"/><polygon points="22,60 36,42 50,60" fill="#0033A0"/><polygon points="38,60 48,46 62,60" fill="#00A3DA"/><rect x="16" y="28" width="7" height="16" fill="#0033A0"/><rect x="26" y="19" width="7" height="25" fill="#00A3DA"/><rect x="36" y="22" width="7" height="14" fill="#FFCC00"/><polygon points="38,4 60,4 60,26 53,19 45,30 40,25 47,15 41,10" fill="#0A5BC4"/></svg><div><h1>Portal Pinhais</h1><small>Notícias, sessões da Câmara, cultura e o Painel Cidadão · Pinhais, PR</small></div><div class="sp"></div><button class="themebtn" id="themeBtn" type="button">Tema claro/escuro</button></header>
+  <header class="top" id="top"><button type="button" class="hamb" id="hamb" aria-label="Abrir menu" aria-controls="menu" aria-expanded="false"><span></span><span></span><span></span></button><svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><polygon points="2,60 20,44 30,60" fill="#FFCC00"/><polygon points="10,60 26,48 40,60" fill="#0B7A3E"/><polygon points="22,60 36,42 50,60" fill="#0033A0"/><polygon points="38,60 48,46 62,60" fill="#00A3DA"/><rect x="16" y="28" width="7" height="16" fill="#0033A0"/><rect x="26" y="19" width="7" height="25" fill="#00A3DA"/><rect x="36" y="22" width="7" height="14" fill="#FFCC00"/><polygon points="38,4 60,4 60,26 53,19 45,30 40,25 47,15 41,10" fill="#0A5BC4"/></svg><div><h1>Portal Pinhais</h1><small>Notícias, sessões da Câmara, cultura e o Painel Cidadão · Pinhais, PR</small></div><div class="sp"></div><button class="themebtn" id="themeBtn" type="button">Tema claro/escuro</button></header>
 
   <div class="view" id="v-home"></div>
 
@@ -1641,6 +1669,14 @@ async function jClick(e) {
     }
   } catch(err) { jMsg(err.message || 'Algo deu errado. Tente de novo.'); }
 }
+(function () {
+  const sd = $('menu'), sc = $('scrim'), hb = $('hamb');
+  const set = on => { sd.classList.toggle('open', on); sc.classList.toggle('on', on); hb.setAttribute('aria-expanded', String(on)); document.body.style.overflow = on ? 'hidden' : ''; };
+  hb.onclick = () => set(!sd.classList.contains('open')); sc.onclick = () => set(false);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') set(false); });
+  sd.addEventListener('click', e => { if (e.target.closest('.it:not(.grp), .sub, .cta')) set(false); });
+  matchMedia('(min-width:701px)').addEventListener('change', e => { if (e.matches) set(false); });
+})();
 window.addEventListener('hashchange', () => { if (!$('v-jornal').hidden && /^#noticia=/.test(location.hash)) { J.tela = 'ver'; J.id = null; jornalRoot(); } });
 setTimeout(() => showView(/^#noticia=/.test(location.hash || '') ? 'jornal' : 'home'), 0);
 
