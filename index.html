@@ -313,6 +313,32 @@ h3{font-weight:700}
 .jn-btn{font:inherit;font-weight:700;background:#0A2A66;color:#fff;border:0;border-radius:10px;padding:11px 16px;cursor:pointer;margin-top:10px;align-self:flex-start}.jn-btn:hover{background:#0033A0}.jn-sec{background:#0B7A3E;margin-left:0}
 .jn-perfil{display:flex;gap:16px;align-items:flex-start;margin:8px 0 18px}.jn-perfil p{margin:8px 0}
 .jn-row{display:flex;justify-content:space-between;gap:10px;align-items:center;border-top:1px solid var(--line);padding:10px 0;flex-wrap:wrap}
+
+/* Editor, admin, comentarios, compartilhar */
+.jn-wide{max-width:860px}
+.jn-txt h2,.jn-txt h3,.jn-txt h4{text-transform:none;letter-spacing:0;line-height:1.2;margin:20px 0 8px}.jn-txt h2{font-size:1.6em}.jn-txt h3{font-size:1.3em}.jn-txt h4{font-size:1.1em}
+.jn-txt blockquote{border-left:4px solid var(--gold);margin:14px 0;padding:4px 16px;color:var(--muted);font-style:italic}
+.jn-txt ul,.jn-txt ol{padding-left:26px;margin:0 0 14px}.jn-txt div{font-size:16px;line-height:1.65;margin:0 0 14px}.jn-txt a{color:var(--blue)}
+.jn-txt table{border-collapse:collapse;display:block;overflow-x:auto;max-width:100%;margin:14px 0}.jn-txt th,.jn-txt td{border:1px solid var(--line);padding:6px 10px;min-width:70px;vertical-align:top;font-size:15px}.jn-txt th{background:var(--card-hi);font-weight:700}.jn-txt td>*,.jn-txt th>*{margin:0}
+.jn-txt figure{margin:18px 0}.jn-txt img{max-width:100%;height:auto;border-radius:10px;display:block;margin:0 auto}.jn-txt figcaption{font-size:13px;color:var(--muted);text-align:center;margin-top:6px}
+.jn-txt hr{border:0;border-top:2px solid var(--line);margin:20px 0}
+.jn-txt .fs1{font-size:.75em}.jn-txt .fs2{font-size:.85em}.jn-txt .fs3{font-size:1em}.jn-txt .fs4{font-size:1.2em}.jn-txt .fs5{font-size:1.45em}.jn-txt .fs6{font-size:1.85em}.jn-txt .fs7{font-size:2.5em}
+.jn-txt .cl0{color:#111}.jn-txt .cl1{color:#c0392b}.jn-txt .cl2{color:#d35400}.jn-txt .cl3{color:#b7950b}.jn-txt .cl4{color:#1e8449}.jn-txt .cl5{color:#1f5fa8}.jn-txt .cl6{color:#6c3483}.jn-txt .cl7{color:#7f8c8d}
+.jn-txt .al-c{text-align:center}.jn-txt .al-r{text-align:right}.jn-txt .al-j{text-align:justify}
+.ed-bar{display:flex;flex-wrap:wrap;gap:5px;align-items:center;border:1px solid var(--line);border-radius:10px 10px 0 0;padding:7px;background:var(--card-hi);margin-top:4px}
+.ed-b{font:inherit;font-size:12.5px;min-width:30px;height:30px;padding:0 9px;border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:7px;cursor:pointer;margin:0}.ed-b:hover{border-color:var(--gold)}
+.ed-cor{width:20px;height:20px;border-radius:50%;border:2px solid var(--card);box-shadow:0 0 0 1px var(--line);cursor:pointer;padding:0;margin:0 1px}
+.ed-bar select{font:inherit;font-size:12.5px;height:30px;width:auto;border-radius:7px;border:1px solid var(--line);background:var(--card);color:var(--fg);padding:0 6px;margin:0}
+.ed-row[hidden]{display:none}.ed-tab{width:100%}.ed-tab>summary{cursor:pointer;font-weight:700;font-size:12.5px;padding:2px 0}@media (min-width:760px){.ed-bar{position:sticky;top:0;z-index:5}}
+.ed-sep{width:1px;height:22px;background:var(--line);margin:0 3px}.ed-row{display:flex;flex-wrap:wrap;gap:6px;align-items:center;width:100%;font-size:12.5px;color:var(--muted)}
+.ed-row input[type=number]{width:56px!important;height:28px;margin:0;padding:0 6px}.ed-row input[type=text],.ed-row input:not([type]){width:min(320px,60vw)!important;height:28px;margin:0}.ed-row label{margin:0!important;font-weight:400!important;display:inline-flex;gap:4px;align-items:center}
+.ed{min-height:360px;border:1px solid var(--line);border-top:0;border-radius:0 0 10px 10px;padding:14px 18px;background:var(--card);outline:none;overflow-wrap:anywhere}.ed:focus{box-shadow:0 0 0 2px var(--gold)}
+.ed figcaption:has(>br:only-child)::before{content:'Legenda (opcional)';color:var(--muted)}.ed td,.ed th{min-height:1.4em}
+.adm h3 small{font-weight:400;color:var(--muted);font-size:12px;margin-left:6px}.adm-tabs{margin:8px 0 14px}
+.adm-kpis{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px;margin:12px 0}.adm-k{border:1px solid var(--line);border-radius:12px;padding:10px 12px;background:var(--card)}.adm-k b{display:block;font-size:22px}.adm-k span{font-size:12px;color:var(--muted)}
+.adm-bars{display:flex;align-items:flex-end;gap:3px;height:120px;border-bottom:1px solid var(--line);padding-top:6px}.adm-bars i{flex:1;background:var(--blue);border-radius:3px 3px 0 0;min-height:2px;display:block}
+.adm-filtro{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px}.adm-filtro input,.adm-filtro select{width:auto;flex:1;min-width:160px}
+.jn-com{border-top:1px solid var(--line);padding:10px 0}.jn-com p{margin:4px 0;line-height:1.5}.jn-coms{margin-top:24px}.jn-share{margin:18px 0}.jn-share a.themebtn{text-decoration:none;display:inline-block}
 @media (max-width:600px){.jn-art h1{font-size:23px}.jn-perfil{flex-direction:column}}
 .jn-pro{display:inline-block;background:#0A2A66;color:#FFCC00;font-size:10px;font-weight:800;letter-spacing:.06em;padding:1px 6px;border-radius:999px;vertical-align:middle;margin-left:4px}
 .jn-procard{margin-top:18px;border:1px solid #cfd8e6;border-radius:12px;padding:14px;max-width:none}
@@ -1071,12 +1097,13 @@ const dtBR = s => { try { return new Date(s).toLocaleDateString('pt-BR', {day:'2
 const JLIDAS = new Set();
 const J = {tela:'lista', cat:'', id:null, perfil:undefined, msg:'', den:false};
 // ----- Jornalista Pro -----
-let PRO = new Set(), PROT = 0, MEUPRO = null;
+let PRO = new Set(), PROT = 0, MEUPRO = null, ADM = null;
 const hojeISO = () => new Date().toISOString().slice(0, 10);
 async function carregaPro(force) {
   if (!force && Date.now() - PROT < 120000) return; PROT = Date.now();
   try { const r = await jrest('jornalista_pro?valido_ate=gte.' + hojeISO() + '&select=user_id'); PRO = new Set((r || []).map(x => x.user_id)); } catch(e) {}
-  MEUPRO = SESS && PRO.has(SESS.id) ? true : false;
+  await carregaAdm();
+  MEUPRO = (SESS && PRO.has(SESS.id)) || ADM ? true : false;
 }
 const proTag = id => PRO.has(id) ? ' <span class="jn-pro" title="Jornalista Pro">PRO</span>' : '';
 const PROPLANOS = [['pro_3m','3 meses','R$ 79'],['pro_12m','12 meses','R$ 249']];
@@ -1114,7 +1141,7 @@ async function jrest(path, opt) {
 function jerr(j, st) {
   const m = String((j && (j.message || j.hint)) || '');
   if (/row-level security|violates/i.test(m)) return 'Não foi possível salvar. Verifique se seu perfil de jornalista está completo e se você não está bloqueado.';
-  if (/check constraint/i.test(m)) return 'Algum campo está fora do tamanho permitido (título de 8 a 160 caracteres e texto de 50 a 30 mil).';
+  if (/check constraint/i.test(m)) return 'Algum campo está fora do tamanho permitido (título de 8 a 160 caracteres e texto com pelo menos 50 caracteres).';
   return m || ('Erro ' + st);
 }
 async function reduz(file, maxW) {
@@ -1137,15 +1164,268 @@ const avatar = (j, s) => okImg(j && j.foto_url) ? `<img class="jn-av" style="wid
 const paras = t => String(t || '').split(/\n{2,}/).map(p => '<p>' + esc(p.trim()).replace(/\n/g, '<br>') + '</p>').join('');
 const catOpts = sel => Object.entries(JCATS).map(([k, v]) => `<option value="${k}"${k === sel ? ' selected' : ''}>${v}</option>`).join('');
 
+
+async function carregaAdm() { ADM = null; if (!SESS) return; try { const r = await jrest('admins?user_id=eq.' + SESS.id + '&select=nivel'); if (r && r[0]) ADM = r[0]; } catch(e) {} }
+const dtHora = s => { try { return new Date(s).toLocaleString('pt-BR', {day:'2-digit', month:'2-digit', year:'numeric', hour:'2-digit', minute:'2-digit'}); } catch(e) { return ''; } };
+
+// ----- Sanitizador do texto das matérias (lista branca) -----
+const TAGS_OK = new Set('P BR B STRONG I EM U S STRIKE H2 H3 H4 UL OL LI BLOCKQUOTE A IMG HR TABLE THEAD TBODY TR TH TD SUB SUP FIGURE FIGCAPTION DIV'.split(' '));
+const TAGS_DROP = new Set('SCRIPT STYLE IFRAME OBJECT EMBED NOSCRIPT TEMPLATE SVG MATH LINK META FORM INPUT BUTTON TEXTAREA SELECT HEAD TITLE'.split(' '));
+const EDCORES = ['#111111', '#c0392b', '#d35400', '#b7950b', '#1e8449', '#1f5fa8', '#6c3483', '#7f8c8d'];
+const ALINH = {center:'al-c', right:'al-r', justify:'al-j'};
+const rgb2hex = s => { const m = /^rgba?\(\s*(\d+)[,\s]+(\d+)[,\s]+(\d+)/i.exec(s || ''); return m ? '#' + [m[1], m[2], m[3]].map(v => (+v).toString(16).padStart(2, '0')).join('') : String(s || '').toLowerCase(); };
+function limpa(html) {
+  const src = new DOMParser().parseFromString('<!doctype html><body>' + String(html || ''), 'text/html').body;
+  const out = document.createElement('div');
+  const walk = (s, d) => {
+    for (const n of Array.from(s.childNodes)) {
+      if (n.nodeType === 3) { d.appendChild(document.createTextNode(n.nodeValue)); continue; }
+      if (n.nodeType !== 1) continue;
+      const t = n.tagName;
+      if (TAGS_DROP.has(t)) continue;
+      if (t === 'FONT' || t === 'SPAN') {
+        let cur = d; const st = n.style || {}, cl = [];
+        if (/^(bold|[6-9]00)$/.test(st.fontWeight || '')) cur = cur.appendChild(document.createElement('strong'));
+        if (st.fontStyle === 'italic') cur = cur.appendChild(document.createElement('em'));
+        if (String(st.textDecorationLine || st.textDecoration || '').includes('underline')) cur = cur.appendChild(document.createElement('u'));
+        if (t === 'FONT') { const sz = n.getAttribute('size'), ci = EDCORES.indexOf(rgb2hex(n.getAttribute('color'))); if (/^[1-7]$/.test(sz || '')) cl.push('fs' + sz); if (ci >= 0) cl.push('cl' + ci); }
+        else (n.getAttribute('class') || '').split(/\s+/).forEach(c => { if (/^(fs[1-7]|cl[0-7])$/.test(c)) cl.push(c); });
+        if (cl.length) { const sp = document.createElement('span'); sp.className = cl.join(' '); cur.appendChild(sp); cur = sp; }
+        walk(n, cur); continue;
+      }
+      if (!TAGS_OK.has(t)) { walk(n, d); continue; }
+      if (t === 'IMG') { const u = n.getAttribute('src'); if (!okImg(u)) continue; const e = document.createElement('img'); e.setAttribute('src', u); e.setAttribute('alt', (n.getAttribute('alt') || '').slice(0, 200)); e.setAttribute('loading', 'lazy'); d.appendChild(e); continue; }
+      const e = document.createElement(t === 'STRIKE' ? 's' : t.toLowerCase());
+      if (/^(P|DIV|H2|H3|H4|LI|TD|TH|BLOCKQUOTE)$/.test(t)) { const al = ALINH[String((n.style && n.style.textAlign) || n.getAttribute('align') || '').toLowerCase()]; if (al) e.className = al; }
+      if (t === 'A') { const h = n.getAttribute('href') || ''; if (!okLink(h)) { walk(n, d); continue; } e.setAttribute('href', h); e.setAttribute('target', '_blank'); e.setAttribute('rel', 'noopener nofollow ugc'); }
+      walk(n, e); d.appendChild(e);
+    }
+  };
+  walk(src, out);
+  out.querySelectorAll('figcaption').forEach(f => { if (!f.textContent.trim()) f.remove(); });
+  out.querySelectorAll('figure').forEach(f => { if (!f.querySelector('img') && !f.textContent.trim()) f.remove(); });
+  return out.innerHTML;
+}
+const corpoHtml = c => typeof c === 'string' && c.startsWith('<!--h-->') ? limpa(c.slice(8)) : paras(c);
+
+// ----- Editor de redação -----
+const EDCMDS = new Set('bold italic underline strikeThrough insertUnorderedList insertOrderedList justifyLeft justifyCenter justifyRight justifyFull undo redo removeFormat insertHorizontalRule unlink foreColor formatBlock fontSize'.split(' '));
+const edB = (cmd, rot, tt) => `<button type="button" class="ed-b" data-j="ed:${cmd}" title="${tt}" aria-label="${tt}">${rot}</button>`;
+function edBarra() {
+  return `<div class="ed-bar" role="toolbar" aria-label="Ferramentas de redação">
+    <select data-edsel="block" aria-label="Estilo do texto"><option value="p">Parágrafo</option><option value="h2">Título</option><option value="h3">Subtítulo</option><option value="h4">Intertítulo</option><option value="blockquote">Citação</option></select>
+    <select data-edsel="size" aria-label="Tamanho da letra"><option value="">Tamanho</option><option value="2">Pequena</option><option value="3">Normal</option><option value="4">Média</option><option value="5">Grande</option><option value="6">Maior</option><option value="7">Gigante</option></select>
+    <span class="ed-sep"></span>${edB('bold', '<b>N</b>', 'Negrito (Ctrl+B)')}${edB('italic', '<i>I</i>', 'Itálico (Ctrl+I)')}${edB('underline', '<u>S</u>', 'Sublinhado (Ctrl+U)')}${edB('strikeThrough', '<s>ab</s>', 'Riscado')}
+    <span class="ed-sep"></span>${EDCORES.map((c, i) => `<button type="button" class="ed-cor" data-j="ed:foreColor:${c}" style="background:${c}" title="Cor do texto ${i + 1}" aria-label="Cor do texto ${i + 1}"></button>`).join('')}
+    <span class="ed-sep"></span>${edB('justifyLeft', 'Esq.', 'Alinhar à esquerda')}${edB('justifyCenter', 'Centro', 'Centralizar')}${edB('justifyRight', 'Dir.', 'Alinhar à direita')}${edB('justifyFull', 'Just.', 'Justificar')}
+    <span class="ed-sep"></span>${edB('insertUnorderedList', '• Lista', 'Lista com marcadores')}${edB('insertOrderedList', '1. Lista', 'Lista numerada')}
+    <span class="ed-sep"></span>${edB('link', 'Link', 'Inserir link')}${edB('unlink', 'Sem link', 'Remover link')}${edB('img', 'Foto', 'Inserir foto no texto')}${edB('insertHorizontalRule', 'Linha', 'Linha horizontal')}
+    <span class="ed-sep"></span>${edB('undo', 'Desfazer', 'Desfazer')}${edB('redo', 'Refazer', 'Refazer')}${edB('removeFormat', 'Limpar', 'Limpar formatação')}
+    <div class="ed-row" id="edLinkRow" hidden><span>Endereço do link:</span><input id="edUrl" type="text" placeholder="https://..." aria-label="Endereço do link">${edB('linkok', 'Aplicar', 'Aplicar link')}${edB('linkcancel', 'Cancelar', 'Cancelar')}</div>
+    <details class="ed-tab"><summary>Tabela (inserir e editar)</summary><div class="ed-row"><b>Tabela:</b><input id="tbL" type="number" min="1" max="20" value="3" aria-label="Linhas"> linhas ×<input id="tbC" type="number" min="1" max="8" value="3" aria-label="Colunas"> colunas<label><input id="tbH" type="checkbox" checked> cabeçalho</label>${edB('tabela', 'Inserir tabela', 'Inserir tabela')}<span class="ed-sep"></span>${edB('tr+', '+ linha', 'Adicionar linha abaixo')}${edB('tr-', '− linha', 'Remover linha')}${edB('tc+', '+ coluna', 'Adicionar coluna')}${edB('tc-', '− coluna', 'Remover coluna')}${edB('td-', 'Excluir tabela', 'Excluir tabela')}</div></details>
+    <input id="edImg" type="file" accept="image/*" hidden></div>`;
+}
+function edSave() { const ed = $('nEd'), s = getSelection(); if (ed && s && s.rangeCount && ed.contains(s.anchorNode)) J.rng = s.getRangeAt(0).cloneRange(); }
+document.addEventListener('selectionchange', edSave);
+function edRest() {
+  const ed = $('nEd'); ed.focus(); const s = getSelection();
+  if (J.rng && ed.contains(J.rng.commonAncestorContainer)) { s.removeAllRanges(); s.addRange(J.rng); }
+  else { const r = document.createRange(); r.selectNodeContents(ed); r.collapse(false); s.removeAllRanges(); s.addRange(r); }
+}
+const edSt = tx => { const e = $('edSt'); if (e) e.textContent = tx || ''; };
+function edCel() { const n = J.rng && J.rng.startContainer, el = n && (n.nodeType === 1 ? n : n.parentElement), td = el && el.closest && el.closest('td,th'); return td && $('nEd').contains(td) ? td : null; }
+function edAct(x) {
+  const i = x.indexOf(':'), c = i < 0 ? x : x.slice(0, i), v = i < 0 ? '' : x.slice(i + 1);
+  if (!$('nEd')) return;
+  edSt('');
+  if (c === 'img') { $('edImg').click(); return; }
+  if (c === 'link') { edSave(); $('edLinkRow').hidden = false; $('edUrl').focus(); return; }
+  if (c === 'linkcancel') { $('edLinkRow').hidden = true; return; }
+  if (c === 'linkok') {
+    let u = $('edUrl').value.trim(); if (u && !/^https?:\/\//i.test(u)) u = 'https://' + u; u = u.replace(/^http:/i, 'https:');
+    if (!okLink(u)) return edSt('Digite um endereço válido (começando com https://).');
+    edRest(); if (J.rng && J.rng.collapsed) document.execCommand('insertHTML', false, `<a href="${esc(u)}">${esc(u)}</a>`); else document.execCommand('createLink', false, u);
+    $('edLinkRow').hidden = true; $('edUrl').value = ''; edSave(); return;
+  }
+  if (c === 'tabela') {
+    const L = Math.min(20, Math.max(1, +$('tbL').value || 3)), C = Math.min(8, Math.max(1, +$('tbC').value || 3)), hd = $('tbH').checked; let h = '<table><tbody>';
+    for (let r = 0; r < L; r++) h += '<tr>' + Array.from({length:C}, () => r === 0 && hd ? '<th><br></th>' : '<td><br></td>').join('') + '</tr>';
+    edRest(); document.execCommand('insertHTML', false, h + '</tbody></table><p><br></p>'); edSave(); return;
+  }
+  if (/^t[rcd][+-]$/.test(c)) {
+    const td = edCel(); if (!td) return edSt('Clique dentro de uma célula da tabela primeiro.');
+    const tb = td.closest('table'), tr = td.parentElement, idx = td.cellIndex;
+    if (c === 'tr+') { const nr = tr.cloneNode(false); Array.from(tr.children).forEach(() => { const e = document.createElement('td'); e.innerHTML = '<br>'; nr.appendChild(e); }); tr.after(nr); }
+    else if (c === 'tr-') { if (tb.rows.length <= 1) tb.remove(); else tr.remove(); }
+    else if (c === 'tc+') tb.querySelectorAll('tr').forEach(r => { const ref = r.children[idx], e = document.createElement(ref && ref.tagName === 'TH' ? 'th' : 'td'); e.innerHTML = '<br>'; if (ref) ref.after(e); else r.appendChild(e); });
+    else if (c === 'tc-') { if (tb.rows[0].cells.length <= 1) tb.remove(); else tb.querySelectorAll('tr').forEach(r => r.children[idx] && r.children[idx].remove()); }
+    else if (c === 'td-') tb.remove();
+    return;
+  }
+  if (!EDCMDS.has(c)) return;
+  edRest(); document.execCommand(c, false, v || null); edSave();
+}
+async function edInsImg(f) {
+  if (!f) return; J.subindo = true; edSt('Enviando a imagem…');
+  try {
+    const u = await subirImg(f, 1280); edRest();
+    document.execCommand('insertHTML', false, `<figure><img src="${esc(u)}" alt=""><figcaption><br></figcaption></figure><p><br></p>`); edSave();
+    edSt('Foto inserida. Se quiser, escreva a legenda logo abaixo dela.');
+  } catch(e) { edSt(e.message || 'Não foi possível enviar a imagem.'); }
+  finally { J.subindo = false; const i = $('edImg'); if (i) i.value = ''; }
+}
+function edPaste(e) {
+  e.preventDefault(); const d = e.clipboardData; if (!d) return;
+  const h = d.getData('text/html'), tx = d.getData('text/plain');
+  document.execCommand('insertHTML', false, h ? limpa(h) : esc(tx).replace(/\r?\n/g, '<br>'));
+}
+function jChange(e) {
+  const t = e.target;
+  if (t.dataset && t.dataset.edsel) { const v = t.value; if (!v || !$('nEd')) return; edRest(); document.execCommand(t.dataset.edsel === 'block' ? 'formatBlock' : 'fontSize', false, v); edSave(); if (t.dataset.edsel === 'size') t.value = ''; return; }
+  if (t.id === 'edImg') return edInsImg(t.files && t.files[0]);
+  if (t.id === 'admS') return admNLista();
+}
+
+// ----- Compartilhar -----
+function compartilhaHtml(n) {
+  const url = location.origin + location.pathname + '#noticia=' + n.id, u = encodeURIComponent(url), tt = encodeURIComponent(n.titulo);
+  const L = (href, rot) => `<a class="themebtn" href="${href}" target="_blank" rel="noopener noreferrer">${rot}</a>`;
+  return `<div class="jn-share"><b>Compartilhar</b><div class="jn-act">${L('https://wa.me/?text=' + tt + '%20' + u, 'WhatsApp')}${L('https://www.facebook.com/sharer/sharer.php?u=' + u, 'Facebook')}${L('https://twitter.com/intent/tweet?text=' + tt + '&url=' + u, 'X')}${L('https://t.me/share/url?url=' + u + '&text=' + tt, 'Telegram')}${L('https://www.linkedin.com/sharing/share-offsite/?url=' + u, 'LinkedIn')}${L('mailto:?subject=' + tt + '&body=' + u, 'E-mail')}<button type="button" class="themebtn" data-j="story">Story / Instagram</button>${navigator.share ? '<button type="button" class="themebtn" data-j="nativo">Mais…</button>' : ''}</div><div id="jStory"></div></div>`;
+}
+function rr(c, x, y, w, h, r) { c.beginPath(); c.moveTo(x + r, y); c.arcTo(x + w, y, x + w, y + h, r); c.arcTo(x + w, y + h, x, y + h, r); c.arcTo(x, y + h, x, y, r); c.arcTo(x, y, x + w, y, r); c.closePath(); }
+async function storyPng(n) {
+  const W = 1080, H = 1920;
+  const carrega = u => new Promise(res => { const im = new Image(); im.crossOrigin = 'anonymous'; im.onload = () => res(im); im.onerror = () => res(null); im.src = u; });
+  const capa = okImg(n.capa_url) ? await carrega(n.capa_url) : null;
+  const wrap = (c, txt, maxW) => { const ls = []; let l = ''; String(txt).split(/\s+/).forEach(w => { const x = l ? l + ' ' + w : w; if (c.measureText(x).width > maxW && l) { ls.push(l); l = w; } else l = x; }); if (l) ls.push(l); return ls; };
+  const draw = im => {
+    const cv = document.createElement('canvas'); cv.width = W; cv.height = H; const c = cv.getContext('2d');
+    const g = c.createLinearGradient(0, 0, 0, H); g.addColorStop(0, '#0A2A66'); g.addColorStop(.6, '#0A5BC4'); g.addColorStop(1, '#0B7A3E'); c.fillStyle = g; c.fillRect(0, 0, W, H);
+    c.fillStyle = 'rgba(255,255,255,.07)'; c.beginPath(); c.moveTo(0, H); c.lineTo(0, H - 330); c.lineTo(260, H - 520); c.lineTo(520, H - 340); c.lineTo(800, H - 560); c.lineTo(W, H - 380); c.lineTo(W, H); c.fill();
+    c.fillStyle = '#FFCC00'; c.beginPath(); c.arc(W - 150, 130, 62, 0, 7); c.fill();
+    c.fillStyle = '#fff'; c.textBaseline = 'alphabetic'; c.font = '700 46px Georgia, serif'; c.fillText('PORTAL PINHAIS', 70, 150);
+    let y = 250;
+    if (im) { const w = W - 140, h = 620, k = Math.max(w / im.width, h / im.height), sw = w / k, sh = h / k; c.save(); rr(c, 70, y, w, h, 36); c.clip(); c.drawImage(im, (im.width - sw) / 2, (im.height - sh) / 2, sw, sh, 70, y, w, h); c.restore(); y += h + 70; } else y += 130;
+    c.font = '700 34px Arial, sans-serif'; const cat = (JCATS[n.categoria] || 'Cidade').toUpperCase(), cw = c.measureText(cat).width + 50;
+    c.fillStyle = '#FFCC00'; rr(c, 70, y, cw, 58, 29); c.fill(); c.fillStyle = '#2A1D00'; c.fillText(cat, 95, y + 41); y += 140;
+    c.fillStyle = '#fff'; let fs = 76; c.font = `800 ${fs}px Georgia, serif`; let ls = wrap(c, n.titulo, W - 140);
+    while (ls.length > 6 && fs > 46) { fs -= 4; c.font = `800 ${fs}px Georgia, serif`; ls = wrap(c, n.titulo, W - 140); }
+    ls.slice(0, 7).forEach((l, i) => c.fillText(l, 70, y + i * fs * 1.18));
+    c.font = '400 36px Arial, sans-serif'; c.fillStyle = 'rgba(255,255,255,.88)'; c.fillText('Leia a matéria completa no Portal Pinhais', 70, H - 190);
+    c.font = '700 38px Arial, sans-serif'; c.fillStyle = '#FFCC00'; c.fillText(location.host || 'portalpinhais.com.br', 70, H - 130);
+    return cv;
+  };
+  const blobOf = cv => new Promise((res, rej) => { try { cv.toBlob(b => b ? res(b) : rej(new Error('png')), 'image/png'); } catch(e) { rej(e); } });
+  try { return await blobOf(draw(capa)); } catch(e) { return await blobOf(draw(null)); }
+}
+
+// ----- Comentários -----
+async function jComentarios(nid) {
+  const box = $('jCom'); if (!box) return;
+  let rows; try { rows = await jrest('comentarios?noticia_id=eq.' + nid + '&status=eq.ativo&select=id,nome,texto,criado_em,user_id&order=criado_em.asc&limit=200'); } catch(e) { box.innerHTML = ''; return; }
+  if (!$('jCom') || J.id !== nid) return;
+  box.innerHTML = `<h3>Comentários (${rows.length})</h3>${rows.map(c => `<div class="jn-com"><b>${esc(c.nome)}</b> <small>${esc(dtHora(c.criado_em))}</small><p>${esc(c.texto).replace(/\n/g, '<br>')}</p>${SESS && (SESS.id === c.user_id || ADM) ? `<button type="button" class="jn-link" data-j="cdel:${esc(c.id)}">Apagar</button>` : ''}</div>`).join('') || '<p class="note">Seja o primeiro a comentar.</p>'}
+    ${SESS ? `<div class="jn-form"><label for="cTxt">Seu comentário</label><textarea id="cTxt" rows="3" maxlength="1000" placeholder="Escreva com respeito. Ofensas, ameaças e dados pessoais de terceiros são removidos."></textarea><button type="button" class="jn-btn" data-j="ccom">Comentar</button></div>` : '<p class="note"><a href="#" data-j="conta">Entre ou crie uma conta gratuita</a> para comentar.</p>'}`;
+}
+async function jComunidade() {
+  J.tela = 'com'; jRender('<h3>Comunidade</h3><p class="note">Últimos comentários dos leitores nas matérias do portal.</p><div id="comL"><p class="note">Carregando…</p></div>');
+  try {
+    const rows = (await jrest('comentarios?status=eq.ativo&select=id,nome,texto,criado_em,noticia_id,noticias(titulo,status)&order=criado_em.desc&limit=50')).filter(c => c.noticias && c.noticias.status === 'publicada');
+    $('comL').innerHTML = rows.length ? rows.map(c => `<div class="jn-com"><b>${esc(c.nome)}</b> <small>${esc(dtHora(c.criado_em))}</small><p>${esc(c.texto).replace(/\n/g, '<br>')}</p><small>em <a href="#" data-j="ver:${esc(c.noticia_id)}">${esc(c.noticias.titulo)}</a></small></div>`).join('') : '<p class="note">Ainda não há comentários. Abra uma matéria e seja o primeiro.</p>';
+  } catch(e) { $('comL').innerHTML = `<p class="err">${esc(e.message)}</p>`; }
+}
+
+// ----- Administração -----
+const ATABS = [['resumo', 'Resumo'], ['noticias', 'Notícias'], ['jornalistas', 'Jornalistas'], ['comentarios', 'Comentários'], ['denuncias', 'Denúncias'], ['equipe', 'Equipe']];
+async function jAdmin() {
+  J.tela = 'admin'; if (!SESS) return jConta();
+  jRender('<p class="note">Carregando…</p>'); await carregaAdm();
+  if (!ADM) return jRender('<p class="err">Acesso restrito à administração.</p>');
+  const at = J.at || 'resumo', tabs = ATABS.filter(([k]) => k !== 'equipe' || ADM.nivel === 'dono');
+  jRender(`<div class="adm"><h3>Administração <small>${ADM.nivel === 'dono' ? 'administrador principal' : 'moderador'}</small></h3><div class="tabs2 adm-tabs">${tabs.map(([k, tx]) => `<button type="button" data-j="atab:${k}" aria-pressed="${at === k}">${tx}</button>`).join('')}</div><div id="admBody"><p class="note">Carregando…</p></div><div class="err" id="jMsg"></div></div>`);
+  try { await ({resumo:admResumo, noticias:admNoticias, jornalistas:admJornalistas, comentarios:admComentarios, denuncias:admDenuncias, equipe:admEquipe}[at] || admResumo)(); } catch(e) { $('admBody').innerHTML = `<p class="err">${esc(e.message)}</p>`; }
+}
+async function admResumo() {
+  const d30 = new Date(Date.now() - 29 * 864e5).toISOString().slice(0, 10);
+  const [ns, js, cs, ds, ls] = await Promise.all([
+    jrest('noticias?select=id,titulo,status,visualizacoes,publicado_em,autor_id,jornalistas(nome)&order=publicado_em.desc&limit=1000'),
+    jrest('jornalistas?select=user_id'), jrest('comentarios?select=id&status=eq.ativo'), jrest('denuncias?select=id'),
+    jrest('leituras_dia?select=dia,n&dia=gte.' + d30).catch(() => [])]);
+  const pub = ns.filter(n => n.status === 'publicada'), tot = ns.reduce((s, n) => s + (n.visualizacoes || 0), 0), pd = {};
+  ls.forEach(r => { pd[r.dia] = (pd[r.dia] || 0) + r.n; });
+  const dias = []; for (let i = 29; i >= 0; i--) { const d = new Date(Date.now() - i * 864e5).toISOString().slice(0, 10); dias.push([d, pd[d] || 0]); }
+  const mx = Math.max(1, ...dias.map(x => x[1])), soma = k => dias.slice(-k).reduce((s, x) => s + x[1], 0);
+  const top = pub.slice().sort((a, b) => (b.visualizacoes || 0) - (a.visualizacoes || 0)).slice(0, 5), card = (v, l) => `<div class="adm-k"><b>${v}</b><span>${l}</span></div>`;
+  $('admBody').innerHTML = `<div class="adm-kpis">${card(pub.length, 'notícias publicadas')}${card(ns.length - pub.length, 'removidas')}${card(fmt(tot), 'leituras no total')}${card(fmt(soma(7)), 'leituras em 7 dias')}${card(js.length, 'jornalistas')}${card(cs.length, 'comentários')}${card(ds.length, 'denúncias')}</div>
+    <h4>Leituras por dia (30 dias)</h4><div class="adm-bars" role="img" aria-label="Gráfico de leituras por dia">${dias.map(([d, n]) => `<i title="${esc(d.split('-').reverse().join('/'))}: ${n}" style="height:${Math.max(2, Math.round(n / mx * 100))}%"></i>`).join('')}</div>
+    <h4>Mais lidas</h4>${top.length ? top.map(n => `<div class="jn-row"><span><b>${esc(n.titulo)}</b><br><small>${esc((n.jornalistas || {}).nome || '—')} · ${esc(dtHora(n.publicado_em))}</small></span><span><b>${fmt(n.visualizacoes || 0)}</b> leituras <button type="button" class="themebtn" data-j="ver:${esc(n.id)}">Ver</button></span></div>`).join('') : '<p class="note">Sem notícias ainda.</p>'}`;
+}
+async function admNoticias() {
+  J.admN = await jrest('noticias?select=id,titulo,status,visualizacoes,publicado_em,atualizado_em,autor_id,categoria,jornalistas(nome)&order=publicado_em.desc&limit=500');
+  $('admBody').innerHTML = '<div class="adm-filtro"><input id="admQ" type="search" placeholder="Buscar por título ou autor" aria-label="Buscar"><select id="admS" aria-label="Situação"><option value="">Todas</option><option value="publicada">Publicadas</option><option value="removida">Removidas</option></select></div><div id="admL"></div>';
+  admNLista();
+}
+function admNLista() {
+  const q = (($('admQ') || {}).value || '').toLowerCase(), s = ($('admS') || {}).value || '', L = $('admL'); if (!L) return;
+  const rows = (J.admN || []).filter(n => (!s || n.status === s) && (!q || (n.titulo + ' ' + ((n.jornalistas || {}).nome || '')).toLowerCase().includes(q)));
+  L.innerHTML = rows.length ? rows.map(n => `<div class="jn-row"><span><b>${esc(n.titulo)}</b>${n.status === 'removida' ? ' <span class="chip">removida</span>' : ''}<br><small>Autor: ${esc((n.jornalistas || {}).nome || '—')} · ${esc(dtHora(n.publicado_em))}${n.atualizado_em ? ' · editada ' + esc(dtHora(n.atualizado_em)) : ''} · ${n.visualizacoes || 0} leituras · ${esc(JCATS[n.categoria] || '')}</small></span><span><button type="button" class="themebtn" data-j="ver:${esc(n.id)}">Ver</button> <button type="button" class="themebtn" data-j="editar:${esc(n.id)}">Editar</button> ${n.status === 'publicada' ? `<button type="button" class="themebtn" data-j="a-st:${esc(n.id)}:removida">Remover</button>` : `<button type="button" class="themebtn" data-j="a-st:${esc(n.id)}:publicada">Restaurar</button>`} <button type="button" class="themebtn" data-j="a-del:${esc(n.id)}">Excluir</button></span></div>`).join('') : '<p class="note">Nada encontrado.</p>';
+}
+async function admJornalistas() {
+  const [js, ns] = await Promise.all([jrest('jornalistas?select=user_id,nome,cidade,criado_em,banido&order=criado_em.desc&limit=500'), jrest('noticias?select=autor_id,visualizacoes,status&limit=1000')]);
+  const st = {}; ns.forEach(n => { const o = st[n.autor_id] || (st[n.autor_id] = {n:0, v:0}); if (n.status === 'publicada') o.n++; o.v += n.visualizacoes || 0; });
+  $('admBody').innerHTML = js.length ? js.map(j => { const o = st[j.user_id] || {n:0, v:0}; return `<div class="jn-row"><span><b>${esc(j.nome)}</b>${j.banido ? ' <span class="chip">bloqueado</span>' : ''}<br><small>${esc(j.cidade || '')} · cadastro em ${esc(dtHora(j.criado_em))} · ${o.n} matérias · ${o.v} leituras</small></span><span><button type="button" class="themebtn" data-j="autor:${esc(j.user_id)}">Perfil</button> <button type="button" class="themebtn" data-j="a-ban:${esc(j.user_id)}:${j.banido ? 0 : 1}">${j.banido ? 'Desbloquear' : 'Bloquear'}</button></span></div>`; }).join('') : '<p class="note">Nenhum jornalista cadastrado.</p>';
+}
+async function admComentarios() {
+  const rows = await jrest('comentarios?select=id,nome,texto,status,criado_em,noticia_id,noticias(titulo)&order=criado_em.desc&limit=100');
+  $('admBody').innerHTML = rows.length ? rows.map(c => `<div class="jn-row"><span><b>${esc(c.nome)}</b> <small>${esc(dtHora(c.criado_em))}${c.status === 'removido' ? ' · oculto' : ''}</small><br>${esc(c.texto).replace(/\n/g, '<br>')}<br><small>em ${esc((c.noticias || {}).titulo || '—')}</small></span><span><button type="button" class="themebtn" data-j="ver:${esc(c.noticia_id)}">Ver matéria</button> <button type="button" class="themebtn" data-j="a-cst:${esc(c.id)}:${c.status === 'ativo' ? 'removido' : 'ativo'}">${c.status === 'ativo' ? 'Ocultar' : 'Restaurar'}</button> <button type="button" class="themebtn" data-j="a-cdel:${esc(c.id)}">Excluir</button></span></div>`).join('') : '<p class="note">Sem comentários.</p>';
+}
+async function admDenuncias() {
+  const rows = await jrest('denuncias?select=id,motivo,criado_em,noticia_id,noticias(titulo,status)&order=criado_em.desc&limit=100');
+  $('admBody').innerHTML = rows.length ? rows.map(d => `<div class="jn-row"><span><b>${esc((d.noticias || {}).titulo || '—')}</b>${(d.noticias || {}).status === 'removida' ? ' <span class="chip">removida</span>' : ''}<br><small>${esc(dtHora(d.criado_em))}</small><br>Motivo: ${esc(d.motivo)}</span><span><button type="button" class="themebtn" data-j="ver:${esc(d.noticia_id)}">Ver matéria</button> <button type="button" class="themebtn" data-j="a-st:${esc(d.noticia_id)}:removida">Remover matéria</button> <button type="button" class="themebtn" data-j="a-ddel:${esc(d.id)}">Dispensar</button></span></div>`).join('') : '<p class="note">Nenhuma denúncia.</p>';
+}
+async function admEquipe() {
+  if (ADM.nivel !== 'dono') return;
+  const rows = await jrest('admins?select=user_id,email,nivel,criado_em&order=criado_em.asc');
+  $('admBody').innerHTML = `<p class="note">Moderadores podem postar, editar, remover matérias, bloquear jornalistas e moderar comentários. Só você (administrador principal) adiciona ou remove moderadores. A pessoa precisa ter conta no portal com o e-mail informado.</p>
+    <div class="jn-form"><label for="admEmail">E-mail do novo moderador</label><input id="admEmail" type="email" autocomplete="off"><button type="button" class="jn-btn" data-j="a-addmod">Adicionar moderador</button></div><h4>Equipe</h4>
+    ${rows.map(a => `<div class="jn-row"><span><b>${esc(a.email)}</b> <span class="chip">${a.nivel === 'dono' ? 'administrador principal' : 'moderador'}</span><br><small>desde ${esc(dtHora(a.criado_em))}</small></span><span>${a.nivel === 'moderador' ? `<button type="button" class="themebtn" data-j="a-rmmod:${esc(a.user_id)}">Remover</button>` : ''}</span></div>`).join('')}`;
+}
+async function jAdminAct(a, x, b) {
+  if (!ADM) return;
+  const sure = () => { if (b.dataset.sure === '1') return true; b.dataset.sure = '1'; b.textContent = 'Confirmar?'; return false; };
+  const pt = (tab, id, body) => jrest(tab + '?' + (tab === 'jornalistas' ? 'user_id' : 'id') + '=eq.' + id, {method:'PATCH', headers:{Prefer:'return=minimal'}, body:JSON.stringify(body)});
+  const dl = (tab, id) => jrest(tab + '?id=eq.' + id, {method:'DELETE'});
+  const [p1, p2] = x.split(':');
+  if (a === 'atab') { J.at = x; return jAdmin(); }
+  if (a === 'a-addmod') {
+    if (ADM.nivel !== 'dono') return;
+    const em = ($('admEmail').value || '').trim(); if (!/^\S+@\S+\.\S+$/.test(em)) return jMsg('Digite um e-mail válido.');
+    const r = await jrest('rpc/adicionar_moderador', {method:'POST', body:JSON.stringify({p_email:em})});
+    if (r === 'nao_encontrado') return jMsg('Não há conta com esse e-mail. Peça para a pessoa criar uma conta em "Sou jornalista" e tente de novo.');
+    await jAdmin(); return jMsg('Moderador adicionado.', true);
+  }
+  if (!isId(p1)) return;
+  if (a === 'a-st') { if (p2 === 'removida' && !sure()) return; await pt('noticias', p1, {status:p2 === 'removida' ? 'removida' : 'publicada'}); }
+  else if (a === 'a-del') { if (!sure()) return; await dl('noticias', p1); }
+  else if (a === 'a-ban') { if (p2 === '1' && !sure()) return; await pt('jornalistas', p1, {banido:p2 === '1'}); }
+  else if (a === 'a-cst') await pt('comentarios', p1, {status:p2 === 'removido' ? 'removido' : 'ativo'});
+  else if (a === 'a-cdel') { if (!sure()) return; await dl('comentarios', p1); }
+  else if (a === 'a-ddel') await dl('denuncias', p1);
+  else if (a === 'a-rmmod') { if (ADM.nivel !== 'dono' || !sure()) return; await jrest('rpc/remover_moderador', {method:'POST', body:JSON.stringify({p_user:p1})}); }
+  else return;
+  return jAdmin();
+}
+
 function jShell(inner) {
   const nome = J.perfil ? esc(J.perfil.nome) : '';
   return `<section class="card"><div class="card-head"><h2>Jornal Cidadão de Pinhais</h2><div class="tabs2">
     <button type="button" data-j="lista" aria-pressed="${J.tela === 'lista'}">Notícias</button>
     <button type="button" data-j="conta" aria-pressed="${['conta','escrever'].includes(J.tela)}">${SESS ? 'Minha área' : 'Sou jornalista'}</button>
-    <button type="button" data-j="regras" aria-pressed="${J.tela === 'regras'}">Regras</button></div></div>${inner}</section>`;
+    <button type="button" data-j="com" aria-pressed="${J.tela === 'com'}">Comunidade</button>
+    <button type="button" data-j="regras" aria-pressed="${J.tela === 'regras'}">Regras</button>${ADM ? `<button type="button" data-j="admin" aria-pressed="${J.tela === 'admin'}">Administração</button>` : ''}</div></div>${inner}</section>`;
 }
 document.addEventListener('keydown', e => { const t = e.target; if (e.key === 'Enter' && t.matches && t.matches('[role=link][data-j]') && $('v-jornal').contains(t)) { e.preventDefault(); t.click(); } });
-function jRender(inner) { const r = $('v-jornal'); r.innerHTML = jShell(inner); r.onclick = jClick; r.onkeydown = e => { if (e.key === 'Enter' && e.target.matches('#jEmail,#jSenha') && $('jGo')) $('jGo').click(); }; }
+function jRender(inner) { const r = $('v-jornal'); r.innerHTML = jShell(inner); r.onclick = jClick; r.onmousedown = e => { if (e.target.closest && e.target.closest('[data-j^="ed:"]')) e.preventDefault(); }; r.onchange = jChange; r.oninput = e => { if (e.target.id === 'admQ') admNLista(); }; r.onkeydown = e => { if (e.key === 'Enter' && e.target.matches('#jEmail,#jSenha') && $('jGo')) $('jGo').click(); }; }
 const jMsg = (t, ok) => { const e = $('jMsg'); if (e) { e.textContent = t || ''; e.style.color = ok ? '#1b7a3a' : ''; } };
 
 async function jornalRoot() {
@@ -1157,6 +1437,8 @@ async function jornalRoot() {
   if (J.tela === 'autor') return jAutor();
   if (J.tela === 'regras') return jRegras();
   if (J.tela === 'escrever') return jEscrever();
+  if (J.tela === 'admin') return jAdmin();
+  if (J.tela === 'com') return jComunidade();
   return jConta();
 }
 const jIr = (tela, id) => { J.tela = tela; J.id = id || null; J.msg = ''; J.den = false; if (tela !== 'ver' && /^#noticia=/.test(location.hash || '')) history.replaceState(null, '', location.pathname + location.search); window.scrollTo({top:0}); return jornalRoot(); };
@@ -1184,15 +1466,16 @@ async function jVer() {
     const n = rows[0]; if (!n) { $('v-jornal').querySelector('.card').insertAdjacentHTML('beforeend', '<p class="note">Notícia não encontrada ou removida.</p>'); return; }
     const a = n.jornalistas || {};
     history.replaceState(null, '', '#noticia=' + n.id);
-    if (!(SESS && SESS.id === n.autor_id) && !JLIDAS.has(n.id)) { JLIDAS.add(n.id); fetch(LIVE.url + '/rest/v1/rpc/registrar_leitura', {method:'POST', headers:{apikey:LIVE.key, 'Content-Type':'application/json'}, body:JSON.stringify({nid:n.id})}).catch(() => {}); }
+    if (!(SESS && SESS.id === n.autor_id) && !ADM && !JLIDAS.has(n.id)) { JLIDAS.add(n.id); fetch(LIVE.url + '/rest/v1/rpc/registrar_leitura', {method:'POST', headers:{apikey:LIVE.key, 'Content-Type':'application/json'}, body:JSON.stringify({nid:n.id})}).catch(() => {}); }
     jRender(`<article class="jn-art"><button type="button" class="jn-link" data-j="lista">← Todas as notícias</button>
       <span class="chip">${esc(JCATS[n.categoria] || 'Cidade')}</span><h1>${esc(n.titulo)}</h1>${n.resumo ? `<p class="jn-lead">${esc(n.resumo)}</p>` : ''}
-      <div class="jn-by" data-j="autor:${esc(n.autor_id)}" role="link" tabindex="0">${avatar(a, 38)}<span><b>${esc(a.nome || 'Jornalista')}</b>${proTag(n.autor_id)}<br><small>${esc(dtBR(n.publicado_em))}${n.atualizado_em ? ' · atualizada em ' + esc(dtBR(n.atualizado_em)) : ''}</small></span></div>
+      <div class="jn-by" data-j="autor:${esc(n.autor_id)}" role="link" tabindex="0">${avatar(a, 38)}<span><b>${esc(a.nome || 'Jornalista')}</b>${proTag(n.autor_id)}<br><small>${esc(dtBR(n.publicado_em))}${n.atualizado_em ? ' · atualizada em ' + esc(dtBR(n.atualizado_em)) : ''}${ADM ? ' · ' + (n.visualizacoes || 0) + ' leituras' : ''}${n.status === 'removida' ? ' · REMOVIDA (só a administração vê)' : ''}</small></span></div>
       ${okImg(n.capa_url) ? `<img class="jn-capa" src="${esc(n.capa_url)}" alt="">` : ''}
-      <div class="jn-txt">${paras(n.corpo)}</div>
+      <div class="jn-txt">${corpoHtml(n.corpo)}</div>
       <p class="note">Conteúdo de responsabilidade do autor. Este espaço é aberto a jornalistas e colaboradores e não representa a opinião da Prefeitura, da Câmara ou de partidos. Viu algo errado? Denuncie abaixo.</p>
-      <div class="jn-act"><button type="button" class="themebtn" data-j="copiar">Copiar link</button><button type="button" class="themebtn" data-j="den">Denunciar</button></div>
-      <div id="jDen"></div><div class="err" id="jMsg"></div></article>`);
+      ${compartilhaHtml(n)}<div class="jn-act"><button type="button" class="themebtn" data-j="copiar">Copiar link</button><button type="button" class="themebtn" data-j="den">Denunciar</button></div>
+      <div id="jDen"></div><div class="err" id="jMsg"></div><div id="jCom" class="jn-coms"></div></article>`);
+    J.cur = n; jComentarios(n.id);
   } catch(e) { jRender(`<p class="err">${esc(e.message)}</p>`); }
 }
 async function jAutor() {
@@ -1235,6 +1518,7 @@ async function jConta() {
   let minhas = '';
   if (J.perfil) { try { const rows = await jrest('noticias?autor_id=eq.' + SESS.id + '&select=id,titulo,status,publicado_em,visualizacoes&order=publicado_em.desc'); minhas = rows.length ? `<h3>Minhas notícias</h3>` + rows.map(n => `<div class="jn-row"><span><b>${esc(n.titulo)}</b><br><small>${esc(dtBR(n.publicado_em))}${MEUPRO ? ' · ' + (n.visualizacoes || 0) + ' leituras' : ''}${n.status === 'removida' ? ' · removida pela moderação' : ''}</small></span><span>${n.status === 'publicada' ? `<button type="button" class="themebtn" data-j="ver:${esc(n.id)}">Ver</button> <button type="button" class="themebtn" data-j="editar:${esc(n.id)}">Editar</button> ` : ''}<button type="button" class="themebtn" data-j="excluir:${esc(n.id)}">Excluir</button></span></div>`).join('') : '<p class="note">Você ainda não publicou nada.</p>'; } catch(e) {} }
   jRender(`<p>Conectado como <b>${esc(SESS.email)}</b> · <a href="#" data-j="sair">Sair</a></p>
+  ${ADM ? '<p><button type="button" class="jn-btn jn-sec" data-j="admin">Abrir a administração</button></p>' : ''}
   <div class="jn-form"><h3>${J.perfil ? 'Meu perfil de jornalista' : 'Cadastro de jornalista'}</h3>
   <p class="note">Nome, foto e biografia ficam públicos e aparecem nas suas notícias.</p>
   <label for="pNome">Nome (como será assinado)</label><input id="pNome" maxlength="80" value="${esc(p.nome || '')}">
@@ -1246,22 +1530,40 @@ async function jConta() {
   ${J.perfil ? '<button type="button" class="jn-btn jn-sec" data-j="novo">Escrever notícia</button>' : ''}</div>${J.perfil ? proCard() : ''}${minhas}`);
 }
 function jEscrever(n) {
-  J.tela = 'escrever'; n = n || J.edit || {}; J.edit = n;
-  jRender(`<button type="button" class="jn-link" data-j="conta">← Minha área</button><div class="jn-form"><h3>${n.id ? 'Editar notícia' : 'Nova notícia'}</h3>
+  J.tela = 'escrever'; n = n || J.edit || {}; J.edit = n; J.rng = null;
+  jRender(`<button type="button" class="jn-link" data-j="${ADM && n.id && n.autor_id !== (SESS && SESS.id) ? 'admin' : 'conta'}">← Voltar</button><div class="jn-form jn-wide"><h3>${n.id ? 'Editar notícia' : 'Nova notícia'}</h3>
   <label for="nTit">Título (8 a 160 caracteres)</label><input id="nTit" maxlength="160" value="${esc(n.titulo || '')}">
   <label for="nCat">Categoria</label><select id="nCat">${catOpts(n.categoria || 'cidade')}</select>
   <label for="nRes">Resumo (opcional, até 300 caracteres)</label><textarea id="nRes" maxlength="300" rows="2">${esc(n.resumo || '')}</textarea>
-  <label for="nCorpo">Texto (separe os parágrafos com uma linha em branco)</label><textarea id="nCorpo" rows="14" maxlength="30000">${esc(n.corpo || '')}</textarea>
+  <label for="nEd">Texto da matéria</label>${edBarra()}<div id="nEd" class="ed jn-txt" contenteditable="true" role="textbox" aria-multiline="true" aria-label="Texto da matéria" spellcheck="true"></div><div class="note" id="edSt"></div>
   <label for="nCapa">Imagem de capa (opcional)</label>${okImg(n.capa_url) ? `<img src="${esc(n.capa_url)}" alt="" style="max-width:220px;border-radius:10px;display:block;margin:6px 0">` : ''}<input id="nCapa" type="file" accept="image/*">
-  <p class="note">Use só imagens suas ou com autorização. Cite as fontes no texto.</p>
+  <p class="note">Use só imagens suas ou com autorização. Cite as fontes no texto. Você pode colocar fotos dentro da matéria com o botão "Foto".</p>
   <label class="chk"><input id="nOk" type="checkbox"><span>Sou o autor deste texto, o conteúdo é verdadeiro até onde sei e respeita as <a href="#" data-j="regras">regras</a>.</span></label>
   <div class="err" id="jMsg"></div><button type="button" class="jn-btn" data-j="publicar">${n.id ? 'Salvar alterações' : 'Publicar agora'}</button></div>`);
+  const ed = $('nEd'); ed.innerHTML = n.corpo ? corpoHtml(n.corpo) : '<p><br></p>';
+  try { document.execCommand('defaultParagraphSeparator', false, 'p'); } catch(e) {}
+  ed.addEventListener('paste', edPaste);
+  ed.addEventListener('drop', e => { if (e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files.length) e.preventDefault(); });
 }
 async function jClick(e) {
   const b = e.target.closest('[data-j]'); if (!b) return;
   if (b.tagName === 'A') e.preventDefault();
   const i = b.dataset.j.indexOf(':'), a = i < 0 ? b.dataset.j : b.dataset.j.slice(0, i), x = i < 0 ? '' : b.dataset.j.slice(i + 1);
   try {
+    if (a === 'ed') return edAct(x);
+    if (a === 'atab' || a.startsWith('a-')) return jAdminAct(a, x, b);
+    if (a === 'admin') return jIr('admin');
+    if (a === 'com') return jIr('com');
+    if (a === 'ccom') { const tx = ($('cTxt').value || '').trim(); if (tx.length < 2) return jMsg('Escreva o comentário.'); await jrest('comentarios', {method:'POST', headers:{Prefer:'return=minimal'}, body:JSON.stringify({noticia_id:J.id, user_id:SESS.id, texto:tx})}); jMsg(''); return jComentarios(J.id); }
+    if (a === 'cdel') { if (isId(x)) await jrest('comentarios?id=eq.' + x, {method:'DELETE'}); return jComentarios(J.id); }
+    if (a === 'story') {
+      jMsg('Gerando a imagem…', true); const blob = await storyPng(J.cur), url = URL.createObjectURL(blob), link = location.origin + location.pathname + '#noticia=' + J.cur.id;
+      J.storyFile = new File([blob], 'story-portal-pinhais.png', {type:'image/png'}); try { navigator.clipboard.writeText(link).catch(() => {}); } catch(x2) {}
+      $('jStory').innerHTML = `<img src="${url}" alt="Prévia do story" style="max-width:220px;border-radius:12px;display:block;margin:8px 0"><div class="jn-act"><button type="button" class="themebtn" data-j="storysend">Enviar para o Instagram ou outro app</button><a class="themebtn" href="${url}" download="story-portal-pinhais.png">Baixar imagem</a></div><p class="note">O Instagram não deixa sites publicarem direto. Baixe a imagem (ou use o botão acima no celular), publique nos Stories e use o adesivo "Link" — o endereço da matéria já foi copiado.</p>`;
+      return jMsg('');
+    }
+    if (a === 'storysend') { try { if (navigator.canShare && navigator.canShare({files:[J.storyFile]})) await navigator.share({files:[J.storyFile], text:J.cur.titulo + ' ' + location.origin + location.pathname + '#noticia=' + J.cur.id}); else jMsg('Seu navegador não envia direto. Use "Baixar imagem".'); } catch(x2) {} return; }
+    if (a === 'nativo') { try { await navigator.share({title:J.cur.titulo, url:location.origin + location.pathname + '#noticia=' + J.cur.id}); } catch(x2) {} return; }
     if (a === 'lista') return jIr('lista');
     if (a === 'cat') { J.cat = x; return jLista(); }
     if (a === 'ver') return jIr('ver', x);
@@ -1270,7 +1572,7 @@ async function jClick(e) {
     if (a === 'conta') { J.edit = null; return jIr('conta'); }
     if (a === 'm-criar') { J.modo = 'criar'; return jConta(); }
     if (a === 'm-entrar') { J.modo = 'entrar'; return jConta(); }
-    if (a === 'sair') { saveSess(null); ASSIN = null; J.perfil = null; MEUPRO = null; return jIr('lista'); }
+    if (a === 'sair') { saveSess(null); ASSIN = null; J.perfil = null; MEUPRO = null; ADM = null; return jIr('lista'); }
     if (a === 'copiar') { try { await navigator.clipboard.writeText(location.origin + location.pathname + '#noticia=' + J.id); jMsg('Link copiado.', true); } catch(x2) { jMsg('Copie o endereço da barra do navegador.'); } return; }
     if (a === 'den') { $('jDen').innerHTML = '<div class="jn-form"><label for="dMot">Por que esta notícia deve ser analisada?</label><textarea id="dMot" rows="3" maxlength="500"></textarea><button type="button" class="jn-btn" data-j="enviarden">Enviar denúncia</button></div>'; return; }
     if (a === 'enviarden') { const m = $('dMot').value.trim(); if (m.length < 5) return jMsg('Explique em poucas palavras.'); await jrest('denuncias', {method:'POST', headers:{Prefer:'return=minimal'}, body:JSON.stringify({noticia_id:J.id, motivo:m})}); $('jDen').innerHTML = ''; return jMsg('Denúncia enviada. Obrigado.', true); }
@@ -1314,9 +1616,11 @@ async function jClick(e) {
     if (a === 'editar') { const [n] = await jrest('noticias?id=eq.' + x + '&select=*'); return jEscrever(n); }
     if (a === 'excluir') { if (b.dataset.sure !== '1') { b.dataset.sure = '1'; b.textContent = 'Confirmar exclusão'; return; } await jrest('noticias?id=eq.' + x, {method:'DELETE'}); return jConta(); }
     if (a === 'publicar') {
-      const n = J.edit || {}, titulo = $('nTit').value.trim(), corpo = $('nCorpo').value.trim();
+      const n = J.edit || {}, titulo = $('nTit').value.trim(), corpo = '<!--h-->' + limpa($('nEd').innerHTML).trim(), txtLen = $('nEd').textContent.trim().length;
+      if (J.subindo) return jMsg('Aguarde o envio da imagem terminar.');
       if (titulo.length < 8) return jMsg('O título precisa ter pelo menos 8 caracteres.');
-      if (corpo.length < 50) return jMsg('O texto precisa ter pelo menos 50 caracteres.');
+      if (txtLen < 50) return jMsg('O texto precisa ter pelo menos 50 caracteres.');
+      if (corpo.length > 190000) return jMsg('O texto ficou grande demais. Divida em duas matérias.');
       if (!$('nOk').checked) return jMsg('Marque a declaração de autoria.');
       jMsg('Publicando…');
       let capa = n.capa_url || null; const f = $('nCapa').files[0]; if (f) capa = await subirImg(f, 1280);
